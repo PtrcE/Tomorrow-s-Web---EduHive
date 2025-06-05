@@ -11,7 +11,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/auth/me", {
+        const res = await axios.get("/api/auth/me", {
           withCredentials: true,
         });
         setUser(res.data);
@@ -27,7 +27,7 @@ const HomePage = () => {
   const fetchPosts = async () => {
     try {
       const res = await axios.get(
-        "https://eduhive-s4wm.onrender.com/api/posts"
+        "/api/posts"
       );
       console.log("Fetched posts:", res.data);
       setPosts(res.data);

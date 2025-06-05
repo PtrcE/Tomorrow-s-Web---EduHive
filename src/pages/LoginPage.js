@@ -31,7 +31,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://eduhive-s4wm.onrender.com/api/auth/login",
+        "/api/auth/login",
         formData
       );
       const token = res.data.token;

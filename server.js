@@ -12,9 +12,9 @@ console.log("JWT_SECRET from env:", process.env.JWTSECRET);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-app.use(express.static(path.join(__dirname, "build")));
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+// app.use(express.static(path.join(__dirname, "build")));
 
 app.use(express.json());
 
@@ -41,6 +41,6 @@ app.use("/api", commentRoutes);
 
 app.listen(PORT, () => {
   console.log(
-    `🚀 Server is running at https://eduhive-s4wm.onrender.com${PORT}`
+    `🚀 Server is running at https://eduhive-s4wm.onrender.com:${PORT}`
   );
 });

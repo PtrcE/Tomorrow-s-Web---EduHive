@@ -19,7 +19,7 @@ const CreatePostBox = ({ onPostSubmit }) => {
 
     try {
       const response = await axios.post(
-        "https://eduhive-s4wm.onrender.com/api/posts",
+        "/api/posts",
         newPost
       );
 
