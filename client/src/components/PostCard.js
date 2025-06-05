@@ -85,7 +85,7 @@ const PostCard = ({
 
     try {
       const res = await axios.post(
-        `https://eduhive-s4wm.onrender.com/api/posts/${postId}/comments`,
+        `/api/posts/${postId}/comments`,
         {
           author: currentUser?.username || "Anonymous",
           text: newComment,

@@ -28,7 +28,7 @@ const CreatePostPage = () => {
 
     try {
       const res = await axios.post(
-        "https://eduhive-s4wm.onrender.com/api/posts",
+        "/api/posts",
         newPost
       );
       console.log("Post created:", res.data);

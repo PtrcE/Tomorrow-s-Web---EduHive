@@ -15,7 +15,7 @@ const SignupPage = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://eduhive-s4wm.onrender.com/api/auth/signup",
+        "/api/auth/signup",
         formData
       );
       navigate("/login");
